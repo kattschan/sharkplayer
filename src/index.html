@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/beercss@3.5.8/dist/cdn/beer.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/beercss@3.5.8/dist/cdn/beer.min.js"
+    ></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.1/dist/cdn/material-dynamic-colors.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="left">
+      <a>
+        <i>home</i>
+        <div>Home</div>
+      </a>
+      <a>
+        <i>search</i>
+        <div>Search</div>
+      </a>
+      <a>
+        <i>share</i>
+        <div>share</div>
+      </a>
+    </nav>
+    <main class="responsive max">
+      <h1>Welcome to Sharkplayer!</h1>
+      <p>Click the button to play a song.</p>
+      <button id="play">Play</button>
+      <div class="field middle-align">
+        <label class="slider">
+          <input type="range" min="0" id="duration">
+          <span></span>
+        </label>
+        <span class="helper">Helper</span>
+      </div>
+    </main>
+  </body>
+</html>
